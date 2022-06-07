@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100;200;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:wght@300&display=swap');
+
+:root{
+    /*Primary*/
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*Neutral*/
+    --Very-dark-blue-bg: hsl(217, 54%, 11%); /*main bg*/
+    --Very-dark-blue-card: hsl(216, 50%, 16%);/*card bg*/
+    --Very-dark-blue-line: hsl(215, 32%, 27%);/*Line*/
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    background-color: var(--Very-dark-blue-bg);
+    padding: 0; margin: 0; 
+    border: none; outline: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+main .card h2{
+    font-size: 1.8rem;
+    color: var(--White);
+}
