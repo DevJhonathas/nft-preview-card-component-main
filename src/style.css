@@ -9,7 +9,9 @@
     --Very-dark-blue-bg: hsl(215, 51%, 15%); /*main bg*/
     --Very-dark-blue-card: hsl(216, 50%, 16%);/*card bg*/
     --Very-dark-blue-line: hsl(215, 32%, 27%);/*Line*/
-    --White: hsl(0, 0%, 100%);
+    --White-title: hsl(0, 0%, 100%);
+    --color-p: hsl(0, 0%, 65%);
+    --blue-light-color-p: hsl(180, 87%, 65%);
 }
 
 *{
@@ -29,19 +31,33 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10vh;
+    padding-top: 15vh;
 }
 
 main .card{
     position: relative;
-    width: 18vw;
+    width: 20vw;
     height: 70vh;
     background-color: var(--Very-dark-blue-card);
-    box-shadow: 10vh 10vh 10vh 1vh #121d2b4d;
+    border: 10px solid rgba(12, 11, 20, 0.2);
+    box-shadow: 0vh 0vh 5vh 1vh #0f0d1d4d;
 }
 
-main .card h2{
+.card h2{
+    background-color: var(--Very-dark-blue-card);
     font-size: 1.8rem;
-    color: var(--White);
+    color: var(--White-title);
+    text-align: center;
 }
 
+.card p{
+    background-color: var(--Very-dark-blue-card);
+    font-family: 'Outfit 300', sans-serif;
+    font-size: 1.4rem;
+    color: var(--color-p);
+    text-align: center;
+}
+
+main .card .value-coin p{
+    color: var(--blue-light-color-p);
+}
