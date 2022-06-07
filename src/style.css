@@ -6,7 +6,7 @@
     --Cyan: hsl(178, 100%, 50%);
 
     /*Neutral*/
-    --Very-dark-blue-bg: hsl(217, 54%, 11%); /*main bg*/
+    --Very-dark-blue-bg: hsl(215, 51%, 15%); /*main bg*/
     --Very-dark-blue-card: hsl(216, 50%, 16%);/*card bg*/
     --Very-dark-blue-line: hsl(215, 32%, 27%);/*Line*/
     --White: hsl(0, 0%, 100%);
@@ -18,13 +18,30 @@
     border: none; outline: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    font-weight: 400;
 }
 
 html{
     font-size: 62.5%;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+main .card{
+    position: relative;
+    width: 18vw;
+    height: 70vh;
+    background-color: var(--Very-dark-blue-card);
+    box-shadow: 10vh 10vh 10vh 1vh #121d2b4d;
+}
+
 main .card h2{
     font-size: 1.8rem;
     color: var(--White);
 }
+
