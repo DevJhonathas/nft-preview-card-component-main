@@ -61,3 +61,21 @@ main .card{
 main .card .value-coin p{
     color: var(--blue-light-color-p);
 }
+
+.card-image img{
+    position: relative;
+    display: block;
+    width: 19vw;
+    height: 40vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
