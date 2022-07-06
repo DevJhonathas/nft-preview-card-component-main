@@ -55,15 +55,29 @@ p{
 
     height: 550px; width: 350px;
     margin-top: 8vh; margin-bottom: 5vh;
-    padding: 15px;
+    padding: 15px; border-radius: 15px;
     background-color: var(--Very-dark-blue-card);
-    box-shadow: 0vh 0vh 5vh 1vh var(--Very-dark-blue-shadow); 
+    box-shadow: 0vh 0vh 4vh 0vh var(--Very-dark-blue-shadow); 
 }
+
 .card img{
-    display: block;
+    display: block; border-radius: 5px;
     height: 300px; width: 100%;
 }
 
+.card .Descritiption{
+    padding-bottom: 17vh;
+    padding-right: 10vw;
+    text-align: left;
+}
+
+.Descritiption > .text{
+    padding-bottom: 1.0vh;
+}
+.Descritiption > .sub-title p{
+    padding-top: 1.0vh;
+    padding-bottom: 1.0vh;
+}
 .attribution { 
     font-size: 1.8vh;
     text-align: center; 

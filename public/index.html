@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="../src/style.css">
+  <link rel="stylesheet" href="../src/screen.css">
+  <link rel="stylesheet" href="../src/print.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
@@ -12,19 +14,15 @@
     <div class="container-card">
       <div class="card">
         <img src="../images/image-equilibrium.jpg" alt="">
-        <section class="title">
-          <h1>Equilibrium #3429</h1>
-          <p>Our Equilibrium collection promotes balance and calm.</p>
+        <section class="Descritiption">
+          <div class="title"><h1>Equilibrium #3429</h1></div>
+          <div class="sub-title"><p>Our Equilibrium collection promotes balance and calm.</p></div>
+          <div class="day-money"> 
+            <p>0.041 ETH</p>
+            <p>3 days left</p>
+          </div>
+          <div class="creator"><p>Creation of Jules Wyvern</p></div>
         </section><!--./tittle-->
-        <section class="value-coin">
-          <p>0.041 ETH</p>
-        </section><!--./value-coin-->
-        <section class="day">
-          <p>3 days left</p>
-        </section><!--./day-->
-        <section class="creator">
-          <p>Creation of Jules Wyvern</p>
-        </section><!--./creator-->
       </div><!--./card-->
     </div><!--./container-card-->
   </main>
