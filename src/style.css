@@ -1,85 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100;200;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:wght@300&display=swap');
-
+/* box-shadow: 0vh 0vh 5vh 1vh #0f0d1d4d; */
 :root{
-    /*Primary*/
-    --Soft-blue: hsl(215, 51%, 70%);
-    --Cyan: hsl(178, 100%, 50%);
-
-    /*Neutral*/
-    --Very-dark-blue-bg: hsl(215, 51%, 15%); /*main bg*/
-    --Very-dark-blue-card: hsl(216, 50%, 16%);/*card bg*/
-    --Very-dark-blue-line: hsl(215, 32%, 27%);/*Line*/
-    --White-title: hsl(0, 0%, 100%);
-    --color-p: hsl(0, 0%, 65%);
-    --blue-light-color-p: hsl(180, 87%, 65%);
+    --Very-dark-blue: hsl(217, 54%, 11%); /*main BG*/
+    --Very-dark-blue: hsl(216, 50%, 16%); /*card BG*/
+    --Very-dark-blue: hsl(215, 32%, 27%); /*line*/
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    border: none; outline: none;
+    text-decoration: none;
 }
 
-*{
-    background-color: var(--Very-dark-blue-bg);
-    padding: 0; margin: 0; 
-    border: none; outline: 0;
-    box-sizing: border-box;
+html{
     font-family: 'Outfit', sans-serif;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+h1{
+    font-weight: 600;
+}
+p{
     font-weight: 400;
 }
-html, body {
-    width: 100% ;height: 100%;
-    margin: 0; padding: 0;
-}
-html{
-    font-size: 62.5%;
-}
 
-main{
+.container-card{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    padding-top: 100px;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
-main .card{
-    position: relative;
-    width: 20vw;
-    height: 70vh;
-    background-color: var(--Very-dark-blue-card);
-    border: 10px solid rgba(12, 11, 20, 0.2);
-    box-shadow: 0vh 0vh 5vh 1vh #0f0d1d4d;
+.card{
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 550; width: 350px;
 }
-
-.card h2{
-    background-color: var(--Very-dark-blue-card);
-    font-size: 1.8rem;
-    color: var(--White-title);
-    text-align: center;
-}
-
-.card p{
-    background-color: var(--Very-dark-blue-card);
-    font-family: 'Outfit 300', sans-serif;
-    font-size: 1.4rem;
-    color: var(--color-p);
-    text-align: center;
-
-}
-
-main .card .value-coin p{
-    color: var(--blue-light-color-p);
-}
-
-.card-image img{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-}
-
 
 .attribution { 
-    font-size: 11px; text-align: center;
+    font-size: 1.8vh;
+    text-align: center; 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+
+
+
+
+
+/* 
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
