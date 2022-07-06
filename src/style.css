@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100;200;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:wght@300&display=swap');
-/* box-shadow: 0vh 0vh 5vh 1vh #0f0d1d4d; */
+/* */
 :root{
-    --Very-dark-blue: hsl(217, 54%, 11%); /*main BG*/
-    --Very-dark-blue: hsl(216, 50%, 16%); /*card BG*/
-    --Very-dark-blue: hsl(215, 32%, 27%); /*line*/
+    --Very-dark-blue-bg: hsl(217, 54%, 11%); /*main BG*/
+    --Very-dark-blue-shadow: hsl(216, 50%, 16%); /*card BG*/
+    --Very-dark-blue-card: hsl(215, 32%, 27%); /*line*/
     --White: hsl(0, 0%, 100%);
+
+    --Font-weight-h1: 600;
+    --Font-weight-p: 400;
+    --Font-weight-attribution: 300;
 }
 *{
     padding: 0; margin: 0;
@@ -19,11 +23,17 @@ html{
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+html, body{
+    width: 100%; height: 100%;
+    background-color: var(--Very-dark-blue-bg);
+}
+
 h1{
-    font-weight: 600;
+    font-weight: var(--Font-weight-h1);
 }
 p{
-    font-weight: 400;
+    font-weight: var(--Font-weight-p);
 }
 
 .container-card{
@@ -41,18 +51,27 @@ p{
     flex-direction: row;
     justify-content: center;
     justify-items: center;
-    align-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    height: 550; width: 350px;
+
+    height: 550px; width: 350px;
+    margin-top: 8vh; margin-bottom: 5vh;
+    padding: 15px;
+    background-color: var(--Very-dark-blue-card);
+    box-shadow: 0vh 0vh 5vh 1vh var(--Very-dark-blue-shadow); 
+}
+.card img{
+    display: block;
+    height: 300px; width: 100%;
 }
 
 .attribution { 
     font-size: 1.8vh;
     text-align: center; 
+    font-weight: var(--Font-weight-attribution);
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+    font-weight: var(--Font-weight-attribution);
 }
 
 
