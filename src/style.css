@@ -76,13 +76,26 @@ p{
     text-align: left;
 }
 
-.Descritiption > .text{
+.Descritiption{
+    color: var(--White);
+}
+
+.Descritiption > .text h1{
     padding-bottom: 1.0vh;
 }
+
 .Descritiption > .sub-title p{
-    padding-top: 1.0vh;
-    padding-bottom: 1.0vh;
+    padding-top: 1.0vh; padding-bottom: 1.0vh;
 }
+
+.day-money > .ethereum img{
+    width: 15px; height: 30px;
+}
+
+.day-money > .clock img{
+    width: 30px; height: 30px;
+}
+
 .attribution { 
     font-size: 1.8vh;
     text-align: center; 
