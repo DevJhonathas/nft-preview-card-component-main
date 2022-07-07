@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100;200;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.google.com/specimen/Outfit');
 /* */
 :root{
     --Very-dark-blue-bg: hsl(217, 54%, 11%); /*main BG*/
@@ -6,6 +6,9 @@
     --Very-dark-blue-card: hsl(215, 32%, 27%); /*line*/
     --White: hsl(0, 0%, 100%);
     --White-gray: hsl(0, 2%, 82%);
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
 
     --Font-weight-h1: 600;
     --Font-weight-p: 400;
@@ -39,6 +42,7 @@ p{
     font-weight: var(--Font-weight-p);
 }
 
+/* SESSAO PARA DEFINICAO DO TAMANHO DE LARG E ALT DO CARD */
 .container-card{
     display: flex;
     flex-direction: row;
@@ -87,6 +91,10 @@ p{
     color: var(--White);
 }
 
+.Descritiption > .title h1:hover{
+    color: var(--Cyan);
+}
+
 .Descritiption > .sub-title p{
     padding-top: 1.0vh; padding-bottom: 2vh;
     font-size: 1.4em; color: var(--White-gray);
@@ -105,11 +113,18 @@ p{
 .creator p{
     color: var(--White);
 }
+.creator a{
+    color: var(--White);
+    font-weight: var(--Font-weight-attribution);
+}
 
+.creator a:hover{
+    color: var(--Cyan);
+}
 
 /* Estava no codigo antes */
 .attribution { 
-    font-size: 1.8vh;
+    font-size: 1.2em;
     text-align: center; 
     font-weight: var(--Font-weight-attribution);
 }
