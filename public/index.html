@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="../src/style.css">
-  <link rel="stylesheet" href="../src/screen.css">
-  <link rel="stylesheet" href="../src/print.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../src/screen.css" media="screen">
+  <link rel="stylesheet" href="../src/print.css" media="print">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
@@ -21,16 +22,12 @@
           <div class="sub-title"><p>Our Equilibrium collection promotes balance and calm.</p></div>
           <div class="day-money"> 
 
-            <div class='ethereum'> <!--Irei usar para caso queira especificar o tamanho no css-->
-              <img src="../images/icon-ethereum.svg" alt="">
+              <img id="icon-ethereum" src="../images/icon-ethereum.svg" alt="">
               <p>0.041 ETH</p>
-            </div>
-            
-            <div class="clock"><!--Irei usar para caso queira especificar o tamanho no css-->
-              <img src="../images/icon-clock.svg" alt="">
-              <p>3 days left</p>
-            </div>
-            
+              
+              <img id="icon-clock" src="../images/icon-clock.svg" alt="">
+              <p>3 days left</p>            
+   
           </div>
           <div class="creator"><p>Creation of Jules Wyvern</p></div>
         </section><!--./tittle-->
