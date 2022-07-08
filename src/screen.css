@@ -1,0 +1,30 @@
+@media screen and (max-height: 1080px){
+    .card{
+        display: flex;    
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap: wrap;
+    
+        height: 500px; width: 320px;
+        margin-top: 10vh; margin-bottom: 10vh;
+        padding: 15px; border-radius: 15px;
+        background-color: var(--Very-dark-blue-card);
+        box-shadow: 0vh 0vh 0vh 2vh var(--Very-dark-blue-border);
+    }
+}
+@media screen and (min-height: 1080px){
+    .card{
+        display: flex;    
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap: wrap;
+    
+        height: 550px; width: 320px;
+        margin-top: 20vh; margin-bottom: 25vh;
+        padding: 15px; border-radius: 15px;
+        background-color: var(--Very-dark-blue-card);
+        box-shadow: 0vh 0vh 0vh 2vh var(--Very-dark-blue-border);
+    }
+}

@@ -67,18 +67,15 @@ p{
     box-shadow: 0vh 0vh 0vh 2vh var(--Very-dark-blue-border);
 }
 
-.card > .img{
-    background: url("../images/image-equilibrium.jpg") no-repeat;
-    border-radius: 5px; background-size: cover;
+.card > .image-equilibrium img{
+    border-radius: 5px;
     height: 280px; width: 300px;
 }
-
-.card > .img:hover{
-    background: url("../images/image-equilibrium.jpg") no-repeat #ff0000;
-    background-size: cover;
+.card > .image-equilibrium img:hover{
+    border-radius: 5px;
     height: 280px; width: 300px;
+    opacity: 80%; filter: brightness(4); 
 }
-
 .card > .Descritiption{
     padding-bottom: 8vh;
     text-align: left;
