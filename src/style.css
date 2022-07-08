@@ -1,14 +1,20 @@
 @import url('https://fonts.google.com/specimen/Outfit');
 /* */
 :root{
+    /* BLUE COLORS */
     --Very-dark-blue-bg: hsl(217, 54%, 11%); /*main BG*/
     --Very-dark-blue-card: hsl(216, 50%, 16%); /*card BG*/
     --Very-dark-blue-border: hsl(218, 44%, 12%); /*border*/
-    --White: hsl(0, 0%, 100%);
-    --White-gray: hsl(0, 2%, 82%);
-
     --Soft-blue: hsl(215, 52%, 70%);
     --Cyan: hsl(178, 100%, 50%);
+    --Blue-avatar: hsl(187, 50%, 37%);
+
+    /* WHITE COLORS */
+    --White: hsl(0, 0%, 100%);
+    --White-gray: hsl(0, 2%, 82%);
+    
+
+ 
 
     --Font-weight-h1: 600;
     --Font-weight-p: 400;
@@ -92,6 +98,8 @@ p{
 
 .Descritiption > .title h1:hover{
     color: var(--Cyan);
+    cursor: pointer;
+    
 }
 
 .Descritiption > .sub-title p{
@@ -164,11 +172,10 @@ p{
 }
 
 #icon-avatar{
-    height: 4vh; width: 2vw; margin-right: 1.5vw; 
+    height: 11%; width: 11%; margin-right: 1.5vw; 
     border: solid 1px var(--White);
-    border-radius: 3vh;
+    border-radius: 50%;
 }
-
 /* Estava no codigo antes */
 .attribution { 
     font-size: 1.2em;
@@ -181,6 +188,10 @@ p{
     font-weight: var(--Font-weight-attribution);
 }
 
+.attribution a:hover{ 
+    color: hsl(228, 79%, 69%); 
+    font-weight: var(--Font-weight-attribution);
+}
 
 /* 
 ## Layout
